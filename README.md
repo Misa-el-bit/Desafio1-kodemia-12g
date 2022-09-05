@@ -1,2 +1,2 @@
 # Desafio1-kodemia-12g
-Primer desafio de Maquetado
+Primer desafio de Maquetado sin boostrap
