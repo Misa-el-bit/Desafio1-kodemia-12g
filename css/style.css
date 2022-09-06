@@ -223,7 +223,6 @@ header nav ul, header nav div.login {
 
 .shorten .links p {
   padding: 0 0 .5rem 1rem;
-  text-overflow: ellipsis;
 }
 
 .shorten .links .result {
