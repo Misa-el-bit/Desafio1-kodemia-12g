@@ -165,8 +165,8 @@ header nav ul, header nav div.login {
 }
 
 .shorten {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #ebeff4));
-  background: linear-gradient(180deg, white 50%, #ebeff4 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), color-stop(10%, #ebeff4));
+  background: linear-gradient(180deg, white 10%, #ebeff4 10%);
 }
 
 .shorten .search {
@@ -206,8 +206,51 @@ header nav ul, header nav div.login {
   width: 219px;
 }
 
-.shorten .links, .shorten .result {
-  display: none;
+.shorten .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 83%;
+  background-color: white;
+  border-radius: 7px;
+  margin: 1rem 2rem 0 2rem;
+  padding: 1rem 0;
+}
+
+.shorten .links p {
+  padding: 0 0 .5rem 1rem;
+  text-overflow: ellipsis;
+}
+
+.shorten .links .result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shorten .links .result a {
+  padding: 1rem 0 1rem 1rem;
+}
+
+.shorten .links .result .btn-regular {
+  width: 85%;
+  height: 35px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.shorten .links .result .btn-regular.copied {
+  background-color: #3b3054;
+  pointer-events: none;
 }
 
 .cards-section {
@@ -527,6 +570,10 @@ footer .site-map .social-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 75%;
     background-color: white;
     height: 65px;
@@ -540,10 +587,20 @@ footer .site-map .social-links {
     margin-top: 2rem;
     padding: 0 2rem;
   }
+  .shorten .links p {
+    padding: 0 0 0 1rem;
+  }
+  .shorten .links hr {
+    display: none;
+  }
   .shorten .links .result {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
