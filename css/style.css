@@ -57,8 +57,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  background-color: white;
 }
 
 header .logo {
@@ -112,8 +113,8 @@ header nav ul, header nav div.login {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .hero .img-hero {
@@ -339,15 +340,15 @@ footer .logo img {
 
 footer .site-map .list-links {
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 footer .site-map .list-links h4 {
   margin: 1rem 0;
 }
 
-footer .site-map .list-links ul li {
-  margin: .5rem 0;
+footer .site-map .list-links ul {
+  line-height: 40px;
 }
 
 footer .site-map .list-links ul li a {
@@ -367,7 +368,7 @@ footer .site-map .social-links {
           justify-content: space-evenly;
   width: 180px;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -378,7 +379,7 @@ footer .site-map .social-links {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    height: 6rem;
+    height: 4rem;
   }
   header img {
     font-size: 24px;
@@ -455,7 +456,7 @@ footer .site-map .social-links {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
   .hero .img-hero {
     width: 850px;
@@ -493,7 +494,7 @@ footer .site-map .social-links {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, white), color-stop(10%, #ebeff4));
     background: linear-gradient(180deg, white 15%, #ebeff4 10%);
   }
