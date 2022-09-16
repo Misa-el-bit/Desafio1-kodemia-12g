@@ -281,6 +281,15 @@ footer{
             width: 180px;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            .icon{
+                svg{
+                    path{
+                        &:hover{
+                            fill: $cyan;
+                        }
+                    }
+                }
+            }
         }
     }
 }
